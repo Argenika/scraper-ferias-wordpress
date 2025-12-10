@@ -20,7 +20,7 @@ REMOTE_FILE = "/csv/ultimo.csv"  # <-- crea esta carpeta en tu servidor vía Fil
 # SUBIR CSV
 # -----------------------------
 try:
-    ftp = FTP(FTP_SERVER)
+    ftp = FTP(FTP_HOST)
     ftp.login(FTP_USER, FTP_PASS)
     print("Conexión FTP exitosa.")
 
@@ -32,3 +32,4 @@ try:
 
 except Exception as e:
     print("Error subiendo archivo FTP:", e)
+
