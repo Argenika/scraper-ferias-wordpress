@@ -1,6 +1,6 @@
 # Scraper de ferias para WordPress
 
-Este proyecto automatiza la recolección de información de ferias desde la web `nferias.com` y su publicación en WordPress.
+Este proyecto automatiza la recolección de información de ferias desde una web  y su publicación en WordPress.
 
 ## Objetivo
 
@@ -12,8 +12,8 @@ Este proyecto automatiza la recolección de información de ferias desde la web 
 
 ## Flujo del proyecto
 
-1. **Scraper Python** (`scraper/scraper_nferias.py`) → obtiene ferias y genera CSV.
-2. **Subida FTP** (`ftp/subir_cvs_ftp.py`) → envía el CSV al servidor.
+1. **Scraper Python**  → obtiene ferias y genera CSV.
+2. **Subida FTP** → envía el CSV al servidor.
 3. **WordPress** → importa el CSV sin duplicar ferias existentes (snippet PHP).
 4. **Notificación** → se puede enviar un mensaje indicando si se crearon ferias nuevas.
 
